@@ -1,9 +1,5 @@
 {
   "name": "Script and style injector",
-  "name-lang": {
-    "es-ES": "Injector de codigo",
-    "en-US": "Script and style injector"
-  },
   "identifier": "codeinjector",
   "description": {
       "es-ES": "Mejora la experiencia de tus usuarios con un tour al iniciar la app.",
@@ -18,7 +14,7 @@
       "en-US": "Tour when starting the app"
   },
   "type": "A",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "King of App",
   "category": ["others"],
   "price": 0,
