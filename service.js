@@ -23,7 +23,20 @@
       const styles = dummyElement.querySelectorAll("style");
 
       scripts.forEach((element)=>{
-        addElement("body", element);
+        // Create a new script element
+        let newScript = document.createElement('script');
+        
+        // Copy all attributes from the old script to the new one
+        Array.from(element.attributes).forEach(attr => {
+            newScript.setAttribute(attr.name, attr.value);
+        });
+
+        // Copy the script content if it's an inline script
+        if (element.textContent) {
+          newScript.textContent = element.textContent;
+        }
+
+        addElement("body", newScript);
       })
 
       styles.forEach((element)=>{
