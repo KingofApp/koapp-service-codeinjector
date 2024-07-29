@@ -12,6 +12,7 @@
     }
   
     function codeinjectorFunction(scopeData) {  
+      if(!scopeData.code || scopeData.code == "") return;
 
       const dummyElement = document.createElement("div");
       dummyElement.innerHTML = scopeData.code;
