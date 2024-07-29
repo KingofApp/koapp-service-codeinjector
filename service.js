@@ -3,23 +3,18 @@
     .module('king.services.codeinjector', [])
     .run(codeinjectorFunction);
 
-  codeinjectorFunction.$inject = ['configService', '$window', '$translate'];
+  codeinjectorFunction.$inject = ['configService'];
 
-  function codeinjectorFunction(configService, $window, $translate) {
+  function codeinjectorFunction(configService) {
 
     if (configService.services) {
-      codeinjectorFunction(configService.services.codeinjector.scope, configService.services.codeinjector['scope-lang']);
+      codeinjectorFunction(configService.services.codeinjector.scope);
     }
   
-    function codeinjectorFunction(scopeData, scopeLang) {
-      /* set language vars */
-      var lang = $translate.use()? $translate.use().replace('_', '-'): "en-US";
-      var scopeDataLang = scopeLang[lang];
-      var code = scopeDataLang.codeLang != ""? scopeDataLang.codeLang : scopeData.code;
-      /* END set language vars */
+    function codeinjectorFunction(scopeData) {  
 
       const dummyElement = document.createElement("div");
-      dummyElement.innerHTML = code;
+      dummyElement.innerHTML = scopeData.code;
 
 
       //filter elements
