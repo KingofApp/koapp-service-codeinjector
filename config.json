@@ -1,0 +1,61 @@
+{
+  "name": "Script and style injector",
+  "name-lang": {
+    "es-ES": "Injector de codigo",
+    "en-US": "Script and style injector"
+  },
+  "identifier": "codeinjector",
+  "description": {
+      "es-ES": "Mejora la experiencia de tus usuarios con un tour al iniciar la app.",
+      "en-US": "Improve the user experience with a tour when starting the app."
+  },
+  "documentation": {
+      "es-ES": "http://resources.kingofapp.com/services/codeinjector/docs/es_ES.md",
+      "en-US": "http://resources.kingofapp.com/services/codeinjector/docs/en_US.md"
+  },
+  "descriptionShort": {
+      "es-ES": "Tour al iniciar la app",
+      "en-US": "Tour when starting the app"
+  },
+  "type": "A",
+  "version": "0.0.1",
+  "author": "King of App",
+  "category": ["others"],
+  "price": 0,
+  "subscription": false,
+  "canContain": false,
+  "platforms": ["android", "ios", "windows"],
+  "vendor": {
+      "codeinjector": "http://resources.kingofapp.com/services/codeinjector/service.js"
+  },
+  "scope": {
+      "code": ""
+  },
+  "deps": [],
+  "libs": [],
+  "config": [
+    {
+        "type": "textarea",
+        "key": "code",
+        "templateOptions": {
+            "label": "Html code",
+            "placeholder": "Write here your html code",
+            "rows": 50,
+            "grow": true,
+            "required": true
+        }
+    }
+  ],
+  "showOn": {
+      "menu": true,
+      "market": true,
+      "dragDrop": true
+  },
+  "images": {
+      "list": "http://resources.kingofapp.com/services/codeinjector/images/list.png",
+      "screenshots": ["services/codeinjector/images/screenshot01.png"],
+      "popover": "http://resources.kingofapp.com/services/codeinjector/images/popover.png",
+      "banner": "http://resources.kingofapp.com/services/codeinjector/images/banner.png",
+      "logo": "http://resources.kingofapp.com/services/codeinjector/images/logo.png"
+  }
+}

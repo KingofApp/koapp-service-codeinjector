@@ -1,0 +1,13 @@
+{
+  "name": "codeinjector",
+  "authors": "",
+  "description": "",
+  "keywords": [
+    "kingofapp",
+    "service"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {}
+}
